@@ -1,0 +1,32 @@
+@import "_nullstyle";
+@import "_slider";
+@import "_snipets";
+
+body{
+	font-family: "Comfortaa", sans-serif;
+	color: #000;
+	background-color: #FFF8F3;
+}
+a{
+	color: inherit;
+	color: #000;
+}
+button {
+	background: #FFBD59;
+	font-weight: 600r;
+}
+button:hover{
+	background: #7B6152;
+	color: #FFF;
+}
+.container {
+	max-width: 360px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+h1,h2,h3,h4,label{
+	font-family: "Yeseva One", serif;
+}
+
+
+@import "_media";
