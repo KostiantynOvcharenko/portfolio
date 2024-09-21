@@ -1,0 +1,80 @@
+
+[class*="__wrapper"]{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-block: var(--wrapper--padding-block);
+    max-width: var(--wrapper--max-width);
+    column-gap: var(--wrapper--column-gap);
+    row-gap: var(--wrapper--row-gap);
+}
+
+[class*="-btn"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: var(--btn-padding-block);
+    padding-inline: var(--btn-padding-inline);
+    gap: var(--btn-gap);
+    font-size: var(--btn-font-size);
+    line-height: var(--btn-line-height);
+    font-weight: var(--btn-font-weight);
+    border-radius: var(--btn-border-radius);
+    background: $download-color;
+    color: $white;
+}
+[class*="-btn"]:visited{
+    color: $white;
+}
+[class*="-btn"]:hover{
+    background: $white;
+    color: $download-color;
+}
+.img-box{
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: flex-start;
+    row-gap: var(--text-box--row-gap);
+    &__title {
+        font-size: var(--text-box__title--font-size);
+        font-weight: var(--text-box__title--font-weight);
+        line-height: var(--text-box__title--line-height); 
+        color: $title-color;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--text-box__content--rowgap);
+        font-size: var(--text-box__content--font-size);
+        line-height: var(--text-box__content--line-height);
+        color: $gray;
+    }
+    &__underline{
+        position: relative;
+        // text-decoration-line: underline;
+        // text-decoration-thickness: 6px;
+        // text-emphasis-color: #FFC8C8;
+    }
+    &__underline::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: .42857143rem;
+        background-color: #FFC8C8;
+        bottom: .21428571rem; /* 3/14 */
+        left: 0;
+        z-index: -1;
+    }
+} // -- .text-box

@@ -1,32 +1,18 @@
 @import "_nullstyle";
 @import "_slider";
 @import "_snipets";
+@import "_elements";
 
-body{
-	font-family: "Comfortaa", sans-serif;
-	color: #000;
-	background-color: #FFF8F3;
-}
-a{
-	color: inherit;
-	color: #000;
-}
-button {
-	background: #FFBD59;
-	font-weight: 600r;
-}
-button:hover{
-	background: #7B6152;
-	color: #FFF;
-}
-.container {
-	max-width: 360px;
-	padding: 0 10px;
-	margin: 0 auto;
-}
-h1,h2,h3,h4,label{
-	font-family: "Yeseva One", serif;
-}
+
+.header{
+	height: 72px;
+	margin: 0 0 10px 0;
+} // --Heaadr
+.main{
+}// --Main
+.footer{
+	height: 567px;
+} // --footer
 
 
 @import "_media";
