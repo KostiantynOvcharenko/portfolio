@@ -107,6 +107,7 @@ body{
     }
     //*   W R A P P E R  * /
     &__wrapper{
+        --wrapper--flex-wrap: wrap;
         --wrapper--row-gap: 50px;
         --wrapper--flex: 0 0 648px;
         --wrapper--padding-top: 52px;
@@ -149,7 +150,7 @@ body{
         --hello__achievement-span-last-chil--color: #697484;
     }
     &__right {
-        --hello__right--flex: 0 0 536px;
+        --hello__right--flex: 0 1 536px;
         --hello__right--height: 636px;
         --hello__right--border-radius: 25px;
         --hello__right--box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
@@ -161,9 +162,16 @@ body{
         --wrapper--padding-block: 112px;
         --wrapper--max-width: 1096px;
         --wrapper--column-gap: 136px;
-        --wrapper--row-gap: 50px;   
+        --wrapper--row-gap: 50px; 
     }
-    .text-box {} // text-box vars (default)
+    &__blur-yellow{
+        --profile__blur-yellow--bottom: 0;
+        --profile__blur-yellow--left: 0;
+        --profile__blur-yellow--width: 541px;
+        --profile__blur-yellow--height: 226px;
+        --profile__blur-yellow--transform: rotate(-30deg);
+        --profile__blur-yellow--border-radius: 541px;
+    }
     &__left {
         --profile__left--flex: 0 1 424px;
         --profile__left--height: 468px;
@@ -172,6 +180,7 @@ body{
         --profile__right--flex: 1 1 424px;
         --profile__right--margin-top: 78px;
     }
+    .text-box {} // text-box vars (default)
     .text-box{}
     &__buttons {
         --profile__text-box--gap: 16px;
@@ -187,3 +196,24 @@ body{
         content: url(../img/icons/download.svg);
     }
 } // -- profile
+.process {
+    &__wrapper{
+        --wrapper--padding-block: 2;
+        --wrapper--max-width: auto;
+        --wrapper--column-gap: 143px;
+        --wrapper--row-gap: 50px; 
+        --wrapper--flex-wrap: no-wrap;
+    }
+    .text-box { // text-box vars
+        --text-box--row-gap: 24px;
+        &__title{
+            --text-box__title--font-size: 48px;
+            --text-box__title--line-height: 116.666667%; /* 56/48 */
+        }
+        // &__content{
+        //     --text-box__content--rowgap: 16px;
+        //     --text-box__content--font-size: var(--font-size);
+        //     --text-box__content--line-height: var(var(--line-height))
+        // }
+    }
+} // -- .process
