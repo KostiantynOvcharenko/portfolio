@@ -1,6 +1,7 @@
 @import "_nullstyle";
 @import "_vars";
 @import "_blocks";
+@import "_fontello";
 
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap);
 html{
@@ -309,32 +310,10 @@ body{
     }
     &__project-btn {
     }
-    // &__download-btn{
-    //     border: 1px solid $primary-500;
-    //     background: $gray-white;
-    // }
-    // &__download-btn span{
-    //     display: flex;
-    //     column-gap: 8px;
-    //     align-items: center;
-    //     color: $primary-500;
-    // }
-    &__download-btn span::before {
-        content: url(../img/icons/download-w.svg);
+    &__download-btn i{
         width: 24px;
         height: 24px;
-    }
-    // &__download-btn:hover{
-    //     background-color: $primary-500;
-    // }
-    // &__download-btn:hover span{
-    //     display: flex;
-    //     column-gap: 16px;
-    //     align-items: center;
-    //     color: $gray-white;
-    // }
-    &__download-btn:hover span::before {
-        content: url(../img/icons/download.svg);
+        font-size: 24px;
     }
 } // --profile
 
@@ -389,7 +368,25 @@ body{
     background: var(--Gray-White, #FFF);
     box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.10);
     margin-bottom: 24px;
-    &__icon { // TODO переробити малюнки іконок в шрифти
+    &__icon i{
+        color: $primary-500;
+        font-size: 32px;
+        line-height: 100%;
+    }
+    &__icon {
+        border-radius: 6px;
+        background: rgba(237, 216, 255, 0.50);
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon:hover{
+        background: $primary-500;
+    }
+    &__icon:hover i{
+        color: $gray-white;
     }
     &__content {
     }
@@ -415,6 +412,7 @@ body{
 // }
 
 .portfolio {
+    margin: 0 0 95px 0;
     &__wrap{
         display: flex;
         flex-direction: column;
@@ -460,14 +458,11 @@ body{
     }
     &__btn {
     }
-    .i-btn {
-    }
-    .i-btn span::after {
-        content: url(../img/icons/portfolio-right-arrow.svg);
+    .i-btn i{
         width: 24px;
         height: 24px;
+        font-size: 24px;
     }
-
 } // --portfolio
 .portfolio-box {
     max-width: 424px;
@@ -508,3 +503,39 @@ body{
     &__btn {
     }
 }
+.banner {
+    background: $gray-900;
+    padding-block: 100px;
+    margin: 0 0 100px 0;
+    &__container {
+    }
+    &__wrapper {
+        max-width: 621px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+        text-align: center;
+    }
+    &__title {
+        color: $gray-white;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 116.666667%; /* 56/48 */
+    }
+    &__text {
+        color: $gray-300;
+        font-size: 18px;
+        line-height: 133.333333%; /* 24/18 */
+    }
+    &__btn span{
+        column-gap: 12px;
+
+    }
+    &__btn i{
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+} // -- banner
