@@ -1,6 +1,13 @@
 
+[class^="icon-"]{
+    transition: all .5s;
+}
+span i[class^="icon-"]{
+    transition: all 0s;
+}
 [class*="-btn"]:visited,
 [class*="-btn"]{
+    transition: all .5s;
     display: flex;
     justify-content: center;
     align-items: center;
