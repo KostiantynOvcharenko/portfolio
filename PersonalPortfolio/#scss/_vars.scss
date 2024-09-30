@@ -30,6 +30,24 @@ $primary-900: #210c33;
     --btn-font-weight: 600;  
     --btn-border-radius: 4px;
 }
+[class$="__logo-box"]
+{
+    --column-gap: 12px;
+}
+a[class$="__logo"]{
+    --font-size: 24px;
+    --line-height: 233.333333%; /* 56/24 */
+    --font-weight: 500;
+    --border-radius: 1000px;
+    --width: 56px;
+    --height: 56px;
+}
+[class$="__logo-text"]{
+    --font-size: 32px;
+    --font-weight: 600;
+    --line-height: 125%; /* 40/32 */
+}
+
 .header {
     --font-size: 16px;
     --font-weight: 600;
@@ -37,23 +55,6 @@ $primary-900: #210c33;
     &__hwrapper{
         --width: 100%;
         --padding-block: 20px;
-    }
-    &__logo-box
-    {
-        --column-gap: 12px;
-    }
-    &__logo{
-        --font-size: 24px;
-        --line-height: 233.333333%; /* 56/24 */
-        --font-weight: 500;
-        --border-radius: 1000px;
-        --width: 56px;
-        --height: 56px;
-    }
-    &__logo-text{
-        --font-size: 32px;
-        --font-weight: 600;
-        --line-height: 125%; /* 40/32 */
     }
     &__menu-item {
         --color: #333;
