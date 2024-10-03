@@ -51,6 +51,7 @@ a{
 	top: 0;
 	left: 0;
 	object-fit: cover;
+	z-index: -1;
 }
 h1,h2{
 	font-family: $second-family;
@@ -76,14 +77,16 @@ h1,h2{
 		width: 100%;
 	}
 	&:has(input:checked) &__menu {
-		display: flex;
+		top: 15px;
 	}
 	&__menu {
 		position: absolute;
 		right: 0;
-		top: 15px;
-		display: none;
-		// display: flex;
+		// top: 15px;
+		top: -1500px;
+		transition: top .5s;
+		// display: none;
+		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
 		row-gap: 20px;
@@ -124,6 +127,7 @@ h1,h2{
 		height: 1px;
 		width: 100%;
 		background-color: $bєzh1;
+		transition: all .5s;
 	}
 	#burger{
 		position: absolute;
@@ -194,6 +198,7 @@ h1,h2{
 }
 
 .atmosphere {
+	margin: 0 0 50px 0;
 	&__left {
 		flex: 0 1 203px;
 		display: flex;
@@ -216,7 +221,6 @@ h1,h2{
 		height: 34px
 	}
 	&__right {
-		padding-top: 13px;
 		max-width: 130px;
 		overflow: hidden;
 	}
@@ -227,6 +231,7 @@ h1,h2{
 		margin-top: -28px;		
 	}
 	&__img--img {
+		top: 13px
 	}
 }
 
@@ -234,8 +239,9 @@ h1,h2{
 	background: $bєzh2;
 	color: $sіriy;
 	padding-block: 25px 20px;
+	margin: 0 0 50px 0;
 	&__inner--row{
-		align-items: center;
+		// align-items: center;
 	}
 	&__left {
 		display: flex;
@@ -246,23 +252,59 @@ h1,h2{
 	&__title {
 		font-size: 15px;
 		line-height: 113.333333%; /* 17/15 */
+		margin: 0 0 10px 0;
 	}
 	&__text {
 		font-size: 8px;
-		line-height: 125%; /* 10/8 */
+		line-height: 112.5%; /* 9/8 */
 	}
 	&__text p:not(:last-child){
 		margin-block-end: 8px;
 	}
+	&__right::before {
+		content: url(../img/icons/candle-b.png);
+		position: absolute;
+		left: -9px;
+		bottom: -13px;
+	}
 	&__right {
-		margin: 0 0 32px 0;
+		position: relative;
+		padding: 14px 10px 32px 0;
+		margin: 0 -10px 0;
 		border-bottom: 1px solid $bєzh1;
 	}
 	&__boximg--boximg {
 		width: 80px;
 		height: 80px;
 	}
+	&__img--img{
+		z-index: 1;
+	}
 	&__img--img {
+	}
+}
+
+.ourgoods {
+	margin: 0 0 25px 0;
+	&__inner {
+	}
+	&__top{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 10px;
+		color: $chorniy;
+		max-width: 235px;
+		margin: 0 auto;
+	}
+	&__title {
+		font-size: 15px;
+		line-height: 113.333333%; /* 17/15 */
+	}
+	&__text {
+		text-align: center;
+		font-size: 8px;
+		line-height: 112.5%; /* 9/8 */
 	}
 }
 
