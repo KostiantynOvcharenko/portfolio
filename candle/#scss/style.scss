@@ -302,7 +302,7 @@ h1,h2,h3,strong{
 }
 
 .ourgoods {
-	margin: 0 0 25px 0;
+	margin: 0 0 59px 0;
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -384,4 +384,174 @@ h1,h2,h3,strong{
 	}
 }
 
-@import "_media";
+.etaps {
+	margin: 0 0 61px 0;
+	color: $chorniy;
+	&__container {
+	}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__top {
+		margin: 0 0 25px 0;
+		max-width: 204px;
+	}
+	&__title {
+		text-align: center;
+		font-size: 15px;
+		line-height: 113.333333%; /* 17/15 */
+		margin-bottom: 10px;
+	}
+	&__text {
+		text-align: center;
+		font-size: 8px;
+		line-height: 112.5%; /* 9/8 */
+	}
+	&__bottom--candle-w::before {
+		left: 0;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 21px;
+	}
+	&__item {
+		flex: 0 0 155px;
+	}
+}
+.etap-item {
+	display: flex;
+	column-gap: 16px;
+	&__left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__text {
+		font-size: 6px;
+		line-height: 116.666667%; /* 7/6 */
+	}
+	&__number {
+		color: $bєzh;
+		font-family: "Yeseva One";
+		font-size: 12px;
+		line-height: 116.666667%; /* 14/12 */
+	}
+	&__right {
+	}
+	&__boximg--boximg {
+		width: 66px;
+		height: 100px;
+	}
+	&__img--img {
+	}
+	&:nth-of-type(4n+4),
+	&:nth-of-type(4n+3) {
+		flex-direction: row-reverse;
+	}
+	&:nth-of-type(4n+4) &__number,
+	&:nth-of-type(4n+3) &__number{
+		text-align: right;
+	}
+}
+
+.courses {
+	color: $chorniy;
+	&__inner--candle-w {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 30px;
+	}
+	&__inner--candle-w::before {
+		left: 0;
+	}
+	&__top {
+		max-width: 205px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		align-items: center;
+	}
+	&__title {
+		font-size: 15px;
+		line-height: 113.333333%; /* 17/15 */
+	}
+	&__text {
+		text-align: center;
+		font-size: 10px;
+		line-height: 110%; /* 11/10 */
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	&__item {
+	}
+	.course-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__boximg--boximg {
+			width: 243px;
+			height: 334px;
+			margin: 0 0 31px 0;
+		}
+		&__boximg--boximg span{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: $bєzh1;
+			color: $sіriy;
+			font-family: $second-family;
+			font-size: 11px;
+			line-height: 100%;
+		}
+		&__boximg--boximg span:nth-of-type(1){
+			width: 174px;
+			height: 43px;
+			left: 0;
+			top: 150px;
+		}
+		&__boximg--boximg span:nth-of-type(2){
+			width: 108px;
+			height: 27px;
+			left: 0;
+			top: 202px;
+		}
+		&__boximg--boximg span:nth-of-type(3){
+			width: 74px;
+			height: 50px;
+			right: -9px;
+			bottom: -13px;
+		}
+		&__img--img {
+		}
+		&__title {
+			font-size: 12px;
+			line-height: 116.666667%; /* 14/12 */
+			margin: 0 0 10px 0;
+		}
+		&__text {
+			text-align: center;
+			max-width: 288px;
+			font-size: 10px;
+			line-height: 110%; /* 11/10 */
+			margin: 0 0 26px 0;
+		}
+		&__btn--btn {
+			width: 115px;
+			height: 39px;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 108.333333%; /* 13/12 */
+		}
+	}
+}
+
+// @import "_media";
