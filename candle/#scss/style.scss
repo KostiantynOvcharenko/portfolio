@@ -460,6 +460,7 @@ h1,h2,h3,strong{
 
 .courses {
 	color: $chorniy;
+	margin: 0 0 59px 0;
 	&__inner--candle-w {
 		display: flex;
 		flex-direction: column;
@@ -553,5 +554,72 @@ h1,h2,h3,strong{
 		}
 	}
 }
+
+.teachers {
+	margin: 0 0 50px 0;
+	background: $bєzh2;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 29px;
+		padding-block: 53px;
+	}
+	&__top {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		color: $sіriy;
+		align-items: center;
+		max-width: 200px;
+	}
+	&__title {
+		color: $sіriy;
+		font-size: 15px;
+		font-weight: 113.333333%; /* 17/15 */
+	}
+	&__text {
+		text-align: center;
+		font-size: 10px;
+		line-height: 110%; /* 11/10 */
+	}
+	&__items {
+		padding-left: 20px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		row-gap: 19px;
+	}
+	&__boximg--boximg {
+		width: 204px;
+		height: 220px;
+	}
+	&__teacher-info {
+		position: absolute;
+		right: -96px;
+		bottom: 9px;
+		padding: 15px 8px;
+		background: $bєzh1;
+		color: #FFF;
+		text-align: center;
+		font-size: 10px;
+		line-height: 120%; /* 12/10 */
+	}
+	&__teacher-info h3{
+		color: #FFF;
+		text-align: center;
+		font-size: 11px;
+		line-height: 154.545455%; /* 17/11 */
+	}
+	&__teacher-info p{
+		max-width: 136px;
+	}
+}
+
 
 // @import "_media";
