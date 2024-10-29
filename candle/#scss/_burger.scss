@@ -1,0 +1,28 @@
+// @import "_burger";
+@mixin place-elements($h, $n) {
+    $height: calc($h / $n); // Висота кожного елемента
+
+    @for $i from 1 through $n {
+        &:nth-child(#{$i}) {
+            transform: translateY($height * ($i - 1));
+        }
+    }
+}
+
+@mixin replace-elements($h, $n) {
+    $height: calc($h / $n); // Висота кожного елемента
+
+    @for $i from 1 through $n {
+        &:nth-child(#{$i}) {
+            @if $i == 1{
+                transform: translateY($height * 2) rotate(-45deg) scale(.8);
+            } @else if $i == $n {
+                transform: translateY($height * 2) rotate(45deg) scale(.8);
+            } @else{
+                // transform: translateY($height * 2);
+                opacity: 0;
+            }
+        }
+    }
+}
+// --@import "_burger";

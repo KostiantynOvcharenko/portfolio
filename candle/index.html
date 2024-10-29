@@ -11,248 +11,521 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="logo">
-                    <div class="img">
-                        <img src="img/logo.png" alt="">
+                <div class="img header__img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="header__menu">
+                    <nav id="menu" class="menu">
+                        <ul class="menu__items">
+                            <li class="menu-item"><a href="#" class="menu-link">Про нас</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Команда</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Відгуки</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Курси</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="link-box link-box--tel header__phone">
+                    <a href="tel:+4565789876">+45 65 78 98 76</a>
+                </div>
+                <div id="burger-icon" class="burger header__burger">
+                    <div class="burger__box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                </div>
-                <nav class="menu">
-                    <ul class="menu__items">
-                        <li class="menu-item"><a href="#" class="menu-link">Про нас</a></li>
-                    </ul>
-                </nav>
-                <div class="link">
-                    <a href="tel:4565789876">+45 65 78 98 76</a>
-                </div>
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
                 </div>
             </div>
         </header>
         <main class="main">
-            <!-- Atmosphere -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
+            <!-- atmoshhere -->
+            <section class="atmosphere main__atmosphere">
+                <div class="atmosphere__container">
+                    <div class="atmosphere__first">
                         <div class="content">
-                            <h1 class="content__title">Створіть атмосферу затишку та гармонії!</h1>
+                            <h1 class="content__title content__title--h1">Створіть атмосферу затишку та гармонії!</h1>
                             <p class="content__text">Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною продукцією зі 100% натуральної соєвого воску.</p>
-                            <a href="#" class="btn">
-                                <span class="btn__text">Купити</span>
-                            </a>
                         </div>
+                        <a href="#" class="btn btn--middle">
+                            <span class="btn__text">Купити</span>
+                        </a>
                     </div>
-                    <div class="section__two">
+                    <div class="atmosphere__second">
                         <div class="img">
                             <img src="img/atmosphere_03-mobile.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- About -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
-                        <div class="content">
+            <!-- about -->
+            <section class="about main__about">
+                <div class="about__container">
+                    <div class="about__first">
+                        <div class="content content--siry">
                             <h2 class="content__title">Про нас</h2>
                             <p class="content__text">Богдан творець бренду який завжди зацікавлений у виготовленні різноманітних речей вдома. Він регулярно експериментував з різними матеріалами та інструментами, спробувавши свої сили у багатьох галузях, включаючи виготовлення свічок.</p>
                             <p class="content__text">Ссоєвий віск виготовляють із соєвих бобів, що зрощуються в Данії, і цей вид воску є екологічно чистим та безпечним для здоров'я.</p>
                         </div>
                     </div>
-                    <div class="section__two">
+                    <div class="about__second about__second--candle about__second--candle-b">
                         <div class="img">
                             <img src="img/aboutus_01.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Goods -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
+            <!-- /about -->
+            <!-- goods -->
+            <section class="goods main__goods">
+                <div class="goods__container">
+                    <div class="goods__first">
                         <div class="content">
                             <h2 class="content__title">Наші товари</h2>
                             <p class="content__text">Ми використовуємо тільки найкращі якісні матеріали: соєвий віск, віскові барвники, високоякісні ароматичні олії та бавовняні фітільці. Відтінки свічок дуже гармонійно поєднуються з ароматом, створюючи незабутню атмосферу у вашому домі.</p>
                         </div>
                     </div>
-                    <div class="section__two">
+                    <div class="goods__second goods__second--candle">
                         <ul class="cards">
                             <li class="cards__item">
-                                <section class="section section--lite">
-                                    <div class="section__one">
-                                        <div class="img">
-                                            <img src="img/goods_01.jpg" alt="">
-                                        </div>
-                                        <div class="content">
-                                            <span class="content__price">10$</span>
-                                            <h2 class="content__title">"Сердечко кохання"</h2>
-                                            <p class="content__text">Запах: ніжний аромат троянди та ванілі. 
-                                                Для чого: для атмосфери романтичного настрою</p>
-                                        </div>
-                                    </div>
-                                    <div class="section__two">
-                                        <a href="#" class="btn">
-                                            <span class="btn__text">Купити</span>
-                                        </a>
-                                    </div>
-                                </section>
+                                <div class="img">
+                                    <img src="img/goods_01.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <span class="content__price">"10$"</span>
+                                    <h2 class="content__title">"Сердечко кохання"</h2>
+                                    <p class="content__text">Запах: ніжний аромат троянди та ванілі. Для чого: для атмосфери романтичного настрою</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn__text">Купити</span>
+                                </a>
                             </li>
+                            
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/goods_02.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <span class="content__price">"20$"</span>
+                                    <h2 class="content__title">"Вихір кохання"</h2>
+                                    <p class="content__text">Запах: ніжний аромат троянди та ванілі. Для чого: для атмосфери романтичного настрою</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn__text">Купити</span>
+                                </a>
+                            </li>
+                            
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/goods_03.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <span class="content__price">"10$"</span>
+                                    <h2 class="content__title">"Веселка"</h2>
+                                    <p class="content__text">Запах: Свіжий аромат лайма. 
+                                        Для чого: для енергії та свіжості в приміщені.</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn__text">Купити</span>
+                                </a>
+                            </li>
+                            
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/goods_04.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <span class="content__price">"10$"</span>
+                                    <h2 class="content__title">"Жіноча чарівність"</h2>
+                                    <p class="content__text">Запах: ніжний аромат лаванди та фрезій. Для чого: для затишку та комфорту.</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn__text">Купити</span>
+                                </a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </section>
-            <!-- Stages -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
+            <!-- /goods -->
+            <!-- stages -->
+            <section class="stages main__stages">
+                <div class="stages__container">
+                    <div class="stages__first">
                         <div class="content">
                             <h2 class="content__title">Етапи створення свічок</h2>
                             <p class="content__text">Створення свічки із соєвого воску може складатися з наступних етапів:</p>
                         </div>
                     </div>
-                    <div class="section__two">
+                    <div class="stages__second stages__second--candle">
                         <ul class="cards">
                             <li class="cards__item">
-                                <section class="section section--lite">
-                                    <div class="section__one">
+                                <div class="section">
+                                    <div class="section__first">
                                         <div class="content">
                                             <p class="content__text">Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки, ароматизатори, барвники та інші додаткові матеріали.</p>
                                         </div>
-                                        <span class="content__num">01</span>
+                                        <p class="number">01</p>
                                     </div>
-                                    <div class="section__two">
+                                    <div class="section__second">
                                         <div class="img">
                                             <img src="img/stage_01.jpg" alt="">
                                         </div>
                                     </div>
-                                </section>
+                                </div>
                             </li>
+                            
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Підготовка форми: вибір форми для свічки та підготовка її до наповнення воском.</p>
+                                        </div>
+                                        <p class="number">02</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_02.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Приготування воску: розплавлення соєвого воску у плавильному пристрої до потрібної температури. Додавання ароматизаторів та барвників за необхідності.</p>
+                                        </div>
+                                        <p class="number">03</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_03.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він був рівномірно напружений.</p>
+                                        </div>
+                                        <p class="number">04</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_04.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки, ароматизатори, барвники та інші додаткові матеріали.</p>
+                                        </div>
+                                        <p class="number">05</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_05.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Наповнення форми: воск налити до форми, поки вона не заповниться повністю. Чекати, доки він затвердіє.</p>
+                                        </div>
+                                        <p class="number">06</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_06.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Приготування воску: розплавлення соєвого воску у плавильному пристрої до потрібної температури. Додавання ароматизаторів та барвників за необхідності.</p>
+                                        </div>
+                                        <p class="number">07</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_07.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він був рівномірно напружений.</p>
+                                        </div>
+                                        <p class="number">08</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_08.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки, ароматизатори, барвники та інші додаткові матеріали.</p>
+                                        </div>
+                                        <p class="number">09</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_09.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="section">
+                                    <div class="section__first">
+                                        <div class="content">
+                                            <p class="content__text">Наповнення форми: воск налити до форми, поки вона не заповниться повністю. Чекати, доки він затвердіє.</p>
+                                        </div>
+                                        <p class="number">10</p>
+                                    </div>
+                                    <div class="section__second">
+                                        <div class="img">
+                                            <img src="img/stage_10.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </section>
-            <!-- Cources -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
+            <!-- /stages -->
+            <!-- cources -->
+            <section class="cources main__cources">
+                <div class="cources__container">
+                    <div class="cources__first">
                         <div class="content">
                             <h2 class="content__title">Наші курси</h2>
-                            <p class="content__text">Наші курси дозволяють зробити перший крок в новій кар'єрі або поглибити знання в своїй галузі, розвиватися як професіонал, а також покращити якість свого життя. </p>
+                            <p class="content__text">Наші курси дозволяють зробити перший крок в новій кар'єрі або поглибити знання в своїй галузі, розвиватися як професіонал, а також покращити якість свого життя.</p>
                         </div>
                     </div>
-                    <div class="section__two">
+                    <div class="cources__second cources__second--candle">
                         <ul class="cards">
                             <li class="cards__item">
-                                <section class="section section--lite">
-                                    <div class="section__one">
-                                        <div class="img">
-                                            <img src="img/course_01.jpg" alt="">
-                                        </div>
-                                        <div class="spans">
-                                            <span class="spans__element">Основи виготовлення свічок</span>
-                                            <span class="spans__element">Навчання - 20 год</span>
-                                            <span class="spans__element">Ціна - 40$</span>
-                                        </div>
-                                        <div class="content">
-                                            <h2 class="content__title">Основи виготовлення свічок</h2>
-                                            <p class="content__text">Будем навчати основам виготовлення свічок з різних матеріалів.</p>
-                                        </div>
-                                    </div>
-                                    <div class="section__two">
-                                        <a href="#" class="btn">
-                                            <span class="btn__text">Купити курс</span>
-                                        </a>
-                                    </div>
-                                </section>
+                                <div class="img">
+                                    <img src="img/course_01.jpg" alt="">
+                                    <span>Основи виготовлення свічок</span>
+                                    <span>Навчання - 20 год</span>
+                                    <span>Ціна - 40$</span>
+                                </div>
+                                <div class="content">
+                                    <h2 class="content__title">Основи виготовлення свічок</h2>
+                                    <p class="content__text">Будем навчати основам виготовлення свічок з різних матеріалів.</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn__text">Купити курс</span>
+                                </a>
                             </li>
+                            
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/course_02.jpg" alt="">
+                                    <span>Мистецтво ароматерапії</span>
+                                    <span>Навчання - 20 год</span>
+                                    <span>Ціна - 40$</span>
+                                </div>
+                                <div class="content">
+                                    <h2 class="content__title">Мистецтво ароматерапії</h2>
+                                    <p class="content__text">Будем  вивчати мистецтво ароматерапії та виготовлення свічок з різними ароматами.</p>
+                                </div>
+                                <a href="#" class="btn">
+                                    <span class="btn__text">Купити курс</span>
+                                </a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </section>
-            <!-- Teachers -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
+            <!-- /cources -->
+            <!-- teachers -->
+            <section class="teachers main__teachers">
+                <div class="teachers__container">
+                    <div class="teachers__first">
                         <div class="content">
                             <h2 class="content__title">Наші викладачі</h2>
                             <p class="content__text">Ці люди працюють разом, щоб створювати курси для вас, які допоможуть вам почати власний бізнес або хоббі.</p>
                         </div>
                     </div>
-                    <div class="section__two">
+                    <div class="teachers__second">
                         <ul class="cards">
                             <li class="cards__item">
                                 <div class="img">
                                     <img src="img/teacher_01.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h3 class="content__title">Викладач Богдан</h3>
-                                    <p class="content__text">Має досвід викладання і роботи 4 роки</p>
+                                    <div class="content content--dark">
+                                        <h2 class="content__title">Викладач Богдан</h2>
+                                        <p class="content__text">Має досвід викладання і роботи 4 роки</p>
+                                    </div>
                                 </div>
                             </li>
+                            
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/teacher_02.jpg" alt="">
+                                    <div class="content content--dark">
+                                        <h2 class="content__title">Викладач  Галина</h2>
+                                        <p class="content__text">Навчає сфері дизайну та декорування</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/teacher_03.jpg" alt="">
+                                    <div class="content content--dark">
+                                        <h2 class="content__title">Викладач Анна</h2>
+                                        <p class="content__text">Має досвід викладання і роботи 6 років</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards__item">
+                                <div class="img">
+                                    <img src="img/teacher_04.jpg" alt="">
+                                    <div class="content content--dark">
+                                        <h2 class="content__title">Маркетолог  Ольга</h2>
+                                        <p class="content__text">Допоможе вам з рекламою</p>
+                                    </div>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </section>
-            <!-- Testimonies -->
-            <section class="section">
-                <div class="section__container">
-                    <div class="section__one">
+            <!-- /teachers -->
+            <!-- testimonials -->
+            <section class="testimonials main__testimonials">
+                <div class="testimonials__container">
+                    <div class="testimonials__first">
                         <div class="content">
                             <h2 class="content__title">Відгуки від клієнтів</h2>
-                            <p class="content__text">Наші покупці мають різний вік, статус, заняття і інтереси, але у них є одна спільна риса - вони прагнуть до гармонії і знаходять радість у маленьких радощах життя, які створюють атмосферу затишку та гармонії у їхньому домі.</p>
+                            <p class="content__text">Наші покупці мають різний вік, статус, заняття і інтереси, але у них є одна спільна риса - вони прагнуть до гармонії і знаходять радість у маленьких радощах життя, які створюють атмосферу затишку та гармонії у їхньому домі..</p>
                         </div>
                     </div>
-                    <div class="section__two">
-                        <section class="section section--lite">
-                            <div class="section__one">
-                                <div class="img">
-                                    <img src="img/atmosphere_03-mobile.png" alt="">
-                                </div>
-                                <img src="img/icons/linkedin.svg" alt="">
-                                <div class="content">
-                                    <h3 class="content__title">Іван Пилипенко</h3>
-                                    <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
-                                </div>
+                    <div class="testimonials__second testimonials__second--candle">
+                        <div class="slider">
+                            <ul class="slider__slides">
+                                <li class="slider__slide">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/testimonial_01.jpg" alt="">
+                                        </div>
+                                        <div class="content__social">
+                                            <div class="img">
+                                                <a href="#" class="social social--instagramm"></a>
+                                            </div>
+                                        </div>
+                                        <h2 class="content__title">Іван Пилипенко</h2>
+                                        <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
+                                    </div>
+                                    <a href="#" class="btn">
+                                        <span class="btn__text">Купити цей товар</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="slider__nav">
+                                <button class="slider__button"></button>
+                                <button class="slider__button"></button>
+                                <button class="slider__button"></button>
+                                <button class="slider__button"></button>
                             </div>
-                            <div class="section__two">
-                                <a href="#" class="btn">
-                                    <span class="btn__text">Купити цей товар</span>
-                                </a>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="section__three">
-                        <div class="spans">
-                            <span class="spans__element"></span>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- /testimonials -->
+            <!-- certificates -->
+            <section class="certificates main__certificates">
+                <div class="certificates__container">
+                    <div class="certificates__first">
+                        <div class="content">
+                            <h2 class="content__title">Сертифікати якості</h2>
+                            <p class="content__text">Сертифікати забезпечують додаткову довіру та впевненість для наших клієнтів.</p>
+                        </div>
+                    </div>
+                    <div class="certificates__second">
+                        <div class="slider">
+                            <ul class="slider__sliders">
+                                <li class="slider__slide">
+                                    <div class="content">
+                                        <div class="img content__image">
+                                            <img class="img__img" src="img/cert_01.jpg" alt="">
+                                        </div>
+                                        <h2 class="content__title">Іван Пилипенко</h2>
+                                        <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
+                                        <a href="#" class="btn">
+                                            <span class="btn__text">Купити цей товар</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="slider__nav">
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /certificates -->
         </main>
         <footer class="footer">
             <div class="footer__container">
                 <div class="logo">
                     <div class="img">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo.png" alt="Logotype">
                     </div>
                 </div>
                 <nav class="menu">
                     <ul class="menu__items">
                         <li class="menu-item"><a href="#" class="menu-link">Про нас</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Команда</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Відгуки</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Курси</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-<section class="section">
-    <div class="img">
-        <img src="" alt="">
-    </div>
-    <a href="#" class="btn"></a>
-</section>
-
