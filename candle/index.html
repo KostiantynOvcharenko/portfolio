@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Виготовлення свічок</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -17,12 +18,12 @@
                 <div class="header__menu">
                     <nav id="menu" class="menu">
                         <ul class="menu__items">
-                            <li class="menu-item"><a href="#" class="menu-link">Про нас</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Команда</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Відгуки</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Курси</a></li>
-                            <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Відгуки</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Курси</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -442,30 +443,97 @@
                     </div>
                     <div class="testimonials__second testimonials__second--candle">
                         <div class="slider">
-                            <ul class="slider__slides">
-                                <li class="slider__slide">
-                                    <div class="content">
-                                        <div class="img">
-                                            <img src="img/testimonial_01.jpg" alt="">
-                                        </div>
-                                        <div class="content__social">
+                            <div class="slider__window">
+                                <ul class="slider__slides">
+                                    <li class="slider__slide">
+                                        <div class="content">
                                             <div class="img">
-                                                <a href="#" class="social social--instagramm"></a>
+                                                <img src="img/testimonial_01.jpg" alt="">
                                             </div>
+                                            <div class="content__social">
+                                                <div class="img">
+                                                    <a href="#" class="social social--instagramm"></a>
+                                                </div>
+                                            </div>
+                                            <h2 class="content__title">Іван Пилипенко</h2>
+                                            <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
                                         </div>
-                                        <h2 class="content__title">Іван Пилипенко</h2>
-                                        <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
-                                    </div>
-                                    <a href="#" class="btn">
-                                        <span class="btn__text">Купити цей товар</span>
-                                    </a>
-                                </li>
-                            </ul>
+                                        <a href="#" class="btn">
+                                            <span class="btn__text">Купити цей товар</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="slider__slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="img/testimonial_01.jpg" alt="">
+                                            </div>
+                                            <div class="content__social">
+                                                <div class="img">
+                                                    <a href="#" class="social social--instagramm"></a>
+                                                </div>
+                                            </div>
+                                            <h2 class="content__title">Іван Пилипенко</h2>
+                                            <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
+                                        </div>
+                                        <a href="#" class="btn">
+                                            <span class="btn__text">Купити цей товар</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="slider__slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="img/testimonial_01.jpg" alt="">
+                                            </div>
+                                            <div class="content__social">
+                                                <div class="img">
+                                                    <a href="#" class="social social--instagramm"></a>
+                                                </div>
+                                            </div>
+                                            <h2 class="content__title">Іван Пилипенко</h2>
+                                            <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
+                                        </div>
+                                        <a href="#" class="btn">
+                                            <span class="btn__text">Купити цей товар</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="slider__slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="img/testimonial_01.jpg" alt="">
+                                            </div>
+                                            <div class="content__social">
+                                                <div class="img">
+                                                    <a href="#" class="social social--instagramm"></a>
+                                                </div>
+                                            </div>
+                                            <h2 class="content__title">Іван Пилипенко</h2>
+                                            <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
+                                        </div>
+                                        <a href="#" class="btn">
+                                            <span class="btn__text">Купити цей товар</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
                             <div class="slider__nav">
-                                <button class="slider__button"></button>
-                                <button class="slider__button"></button>
-                                <button class="slider__button"></button>
-                                <button class="slider__button"></button>
+                                <div class="slider__nav">
+                                    <label class="slider__button">
+                                        <input type="radio"  name="test-slider" checked></input>
+                                    </label>
+                                    <label class="slider__button">
+                                        <input type="radio"  name="test-slider"></input>
+                                    </label>
+                                    <label class="slider__button">
+                                        <input type="radio"  name="test-slider"></input>
+                                    </label>
+                                    <label class="slider__button">
+                                        <input type="radio"  name="test-slider"></input>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -481,51 +549,221 @@
                             <p class="content__text">Сертифікати забезпечують додаткову довіру та впевненість для наших клієнтів.</p>
                         </div>
                     </div>
-                    <div class="certificates__second">
+                    <div class="certificates__second certificates__second--candle">
                         <div class="slider">
-                            <ul class="slider__sliders">
-                                <li class="slider__slide">
-                                    <div class="content">
-                                        <div class="img content__image">
-                                            <img class="img__img" src="img/cert_01.jpg" alt="">
+                            <div class="slider__window">
+                                <ul class="slider__slides">
+                                    <li class="slider__slide">
+                                        <div class="img">
+                                            <img src="img/cert_01.jpg" alt="">
                                         </div>
-                                        <h2 class="content__title">Іван Пилипенко</h2>
-                                        <p class="content__text">Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"</p>
-                                        <a href="#" class="btn">
-                                            <span class="btn__text">Купити цей товар</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="slider__slide">
+                                        <div class="img">
+                                            <img src="img/cert_02.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="slider__slide">
+                                        <div class="img">
+                                            <img src="img/cert_01.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="slider__slide">
+                                        <div class="img">
+                                            <img src="img/cert_02.jpg" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="slider__nav">
-                                <button></button>
+                                <label class="slider__button">
+                                    <input type="radio"  name="cert-slider" checked></input>
+                                </label>
+                                <label class="slider__button">
+                                    <input type="radio"  name="cert-slider"></input>
+                                </label>
+                                <label class="slider__button">
+                                    <input type="radio"  name="cert-slider"></input>
+                                </label>
+                                <label class="slider__button">
+                                    <input type="radio"  name="cert-slider"></input>
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- /certificates -->
+            <!-- questions -->
+            <section class="questions main__questions">
+                <div class="questions__container">
+                    <div class="questions__first">
+                        <div class="content">
+                            <h2 class="content__title">Часті запитання</h2>
+                        </div>
+                    </div>
+                    <div class="questions__second">
+                        <ul class="list">
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Які запахи доступні для свічок?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Як довго горять свічки?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Чи можна зробити замовлення на індивідуальний дизайн свічки?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Які є варіанти доставки?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Як оплачувати замовлення?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Як довго триває курс?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Яка ціна на курс?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="content">
+                                    <h2 class="content__title">Чи є сертифікат на курс?</h2>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus velit suscipit labore debitis dolorem reiciendis reprehenderit eos optio magni, dolores autem praesentium rerum nobis. Itaque impedit placeat omnis dignissimos.</p>
+                                    <label class="content__label">
+                                        <input class="content__input" type="checkbox">
+                                        <img src="img/icons/arrow-down.svg" alt="Arrow down">
+                                    </label>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /questions -->
+            <!-- baner -->
+            <section class="baner main__baner">
+                <div class="img baner__image">
+                    <img class="img__img" src="img/by-banner.png" alt="">
+                </div>
+                <div class="baner__container">
+                    <a href="#" class="btn">
+                        <span class="btn__text">В каталог</span>
+                    </a>
+                </div>
+            </section>
+            <!-- /baner -->
+            <!-- form -->
+            <section class="form-section main__form">
+                <div class="form-section__container">
+                    <div class="form-section__first">
+                        <div class="content">
+                            <h2 class="content__title">Підпишись на наші акції</h2>
+                            <form class="form" action="#">
+                                <dl class="form__group">
+                                    <div class="form__field">
+                                        <dt>Імя</dt>
+                                        <dd><input type="text" name="first-name"></dd>
+                                    </div>
+                                    <div class="form__field">
+                                        <dt>Е-mail</dt>
+                                        <dd><input type="email" name="e-mail" id=""></dd>
+                                    </div>
+                                </dl>
+                                <button class="btn" type="submit">Підписатись</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /form -->
         </main>
         <footer class="footer">
             <div class="footer__container">
-                <div class="logo">
-                    <div class="img">
-                        <img src="img/logo.png" alt="Logotype">
+                <div class="img footer__img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="footer__menu">
+                    <nav id="menu" class="menu">
+                        <ul class="menu__items">
+                            <li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Відгуки</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Курси</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__phone" href="tel:+4565789876">+45 65 78 98 76</a>
+                    <a class="footer__email" href="mailto:candelsCandels@gmail.com">candelsCandels@gmail.com</a>
+                    <div class="footer__social">
+                        <div class="img">
+                            <a href="#" class="social social--faceboock"></a>
+                        </div>
+                        <div class="img">
+                            <a href="#" class="social social--instagramm"></a>
+                        </div>
+                        <div class="img">
+                            <a href="#" class="social social--linkedin"></a>
+                        </div>
+                        <div class="img">
+                            <a href="#" class="social social--youtube"></a>
+                        </div>
                     </div>
                 </div>
-                <nav class="menu">
-                    <ul class="menu__items">
-                        <li class="menu-item"><a href="#" class="menu-link">Про нас</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Команда</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Відгуки</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Курси</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
-                    </ul>
-                </nav>
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
 </body>
 </html>
