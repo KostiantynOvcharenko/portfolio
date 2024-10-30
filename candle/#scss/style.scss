@@ -28,7 +28,7 @@ body{
 // a{color: inherit;}
 [class*="__container"]{
 	max-width: 360px;
-	padding-inline: 20px;
+	padding-inline: 10px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -319,7 +319,7 @@ h1{
 	width: 24px;
 	height: 33px;
 	object-fit: cover;
-	transform: translate(-50%, 38%);
+	transform: translate(0%, 38%);
 }
 [class*="__second--candle-b"]::after{
 	content: url(../img/icons/candle-b.png);
@@ -329,6 +329,13 @@ h1{
 		&__container {
 		}
 		&__first {
+			.content{
+				&__text{
+					max-width: 235px;
+					font-size: 8px;
+					line-height: 112.5%; /* 9/8 */
+				}
+			}
 		}
 		&__second {
 			.cards {
@@ -336,6 +343,7 @@ h1{
 				grid-template: 1fr / repeat(2, 1fr);
 				row-gap: 40px;
 				justify-content: space-between;
+				margin: 0 auto;
 				&__item {
 					display: grid;
 					grid-template: 177px 1fr 30px / 1fr;
