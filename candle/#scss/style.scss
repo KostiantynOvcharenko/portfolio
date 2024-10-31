@@ -1,11 +1,3 @@
-@import "_nullstyle";
-@import "_fonts";
-@import "_burger";
-
-
-// @import url(https://fonts.googleapis.com/css?family=Yeseva+One:regular);
-// @import url(https://fonts.googleapis.com/css?family=Comfortaa:regular,700);
-
 $bєzh: #bea495;
 $zhovtiy: #ffbd59;
 $sіriy: #fafafa;
@@ -13,10 +5,11 @@ $bєzh1: #7b6152;
 $bєzh2: #a5978e;
 $rozoviy: #fff8f3;
 $chorniy: #000;
-
+@import "_nullstyle";
+@import "_fonts";
 $font-family: "Comfortaa", sans-serif;
 $second-family: "Yeseva One", sans-serif;
-
+@import "_burger";
 
 body{
 	font-family: $font-family;
@@ -34,11 +27,6 @@ body{
 	align-items: center;
 	flex-direction: column;
 	row-gap: 30px;
-}
-@media (max-width: 480px){
-	[class*="__container"]{
-		max-width: 480px;
-	}
 }
 .atmosphere,
 .about{
@@ -227,14 +215,16 @@ body{
 		height: 206px;
 	}
 	& .img{
+		display: none;
 		height: 100%;
+	}
+	& .img.img--360{
+		display: block;
 	}
 	& .btn{
 		width: 91px;
 		height: 34px;
 	}
-}
-h1{
 }
 .atmosphere .content,
 .about .content{
@@ -274,6 +264,7 @@ h1{
 		line-height: 120%;
 		text-align: center;
 	}
+
 }
 .content.content--siry {
 	.content__title{
@@ -298,11 +289,17 @@ h1{
 	&__first {
 		padding-bottom: 18px;
 	}
-	&__second {
+	&__second.about__second--candle{
+		padding-bottom: 0;
 		.img{
+			display: none;
 			width: 100%;
 			aspect-ratio: 1;
 		}
+		.img.img--360{
+			display: block;
+		}
+	
 	}
 	&__second::after{
 		
@@ -994,3 +991,5 @@ $slides-count: 12;
 	&__box {
 	}
 }
+
+@import "_media";
