@@ -886,11 +886,14 @@ $slides-count: 12;
 .form-section {
 	padding-block: 50px;
 	&__container {
+	}
+	&__second{
+		display: none;
+	}
+	&__first {
 		background: #FFF;
 		box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.30);
 		padding: 30px 20px 20px;
-	}
-	&__first {
 		width: 100%;
 		.content {
 			&__title {
