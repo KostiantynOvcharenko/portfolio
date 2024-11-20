@@ -25,17 +25,20 @@ span i[class^="icon-"]{
     width: fit-content;
 }
 [class*="-btn"]:hover{
-    background: $gray-white;
-    color: $primary-500;
+    background: $primary-600;
 }
 [class*="i-btn"]:visited,
 [class*="i-btn"]{
     background-color: $gray-white;
     color: $primary-500;
+    border-radius: 4px;
+    border: 1px solid $primary-500;
 }
 [class*="i-btn"]:hover{
-    background-color: $primary-500;
-    color: $gray-white;
+    // background-color: $primary-500;
+    // color: $gray-white;
+    border: 1px solid $primary-600;
+    color: $primary-600;
 }
 [class*="-btn"] span{
     display: flex;

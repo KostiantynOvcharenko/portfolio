@@ -4,6 +4,7 @@
 @import "_fontello";
 
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,regular,500,600&display=swap);
+
 html{
     font-size: 14px;
 }
@@ -382,10 +383,14 @@ body{
         justify-content: center;
         align-items: center;
     }
-    &__icon:hover{
+    &:hover{
+        background: $gray-white;
+        box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);        
+    }
+    &:hover &__icon{
         background: $primary-500;
     }
-    &__icon:hover i{
+    &:hover &__icon i{
         color: $gray-white;
     }
     &__content {
