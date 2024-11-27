@@ -1985,7 +1985,7 @@ body {
     font-size: 14px;
   }
   [class*=__container] {
-    max-width: 960px;
+    max-width: 1000px;
     padding-inline: 20px;
   }
   .main__baner,
@@ -2005,7 +2005,7 @@ body {
     font-size: 14px;
   }
   .atmosphere {
-    padding-top: 150px;
+    padding-top: 124px;
   }
   .atmosphere__first {
     flex: 1 0 333px;
@@ -2027,10 +2027,10 @@ body {
     padding: 18px 54px;
   }
   .atmosphere__second {
-    height: 358px;
     position: relative;
-    top: -50px;
-    right: 20px;
+    height: 420px;
+    top: -96px;
+    right: 43px;
   }
   .atmosphere .img.img--480 {
     display: none;
@@ -2047,8 +2047,8 @@ body {
     height: 100%;
   }
   .atmosphere .btn {
-    width: 120px;
-    height: 45px;
+    width: 150px;
+    height: 55px;
   }
   .content .content__title,
   .content.content--siry .content__title {
@@ -2058,11 +2058,17 @@ body {
   .content.content--siry .content__text {
     font-size: 14px;
   }
+  .content__title:not(:last-child) {
+    padding-bottom: 17px;
+  }
+  .about__first .content__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
   .about {
-    padding-block: 128px 10px;
+    padding-block: 128px 0px;
   }
   .about__container {
-    grid-template: 1fr/1fr 610px;
+    grid-template: 1fr/1fr 640px;
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -2072,7 +2078,7 @@ body {
   }
   .about__second {
     position: relative;
-    top: -60px;
+    top: -75px;
   }
   .about__second.about__second--candle {
     padding-bottom: 73px;
@@ -2083,6 +2089,9 @@ body {
   }
   .about__second.about__second--candle .img.img--02 {
     min-width: 350px;
+  }
+  .about__images {
+    align-items: center;
   }
   .goods__first {
     flex: 0 0 300px;
